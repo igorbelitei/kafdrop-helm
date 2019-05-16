@@ -6,12 +6,13 @@ global:
   host: be.aws-us-east-1.gpd.williamhill.plc
   registry: 208495352775.dkr.ecr.eu-west-2.amazonaws.com
   zookeeper: zookeeper-service:2181
+  schema_registry: http://schema-registry-service:8081
 
 replicaCount: 1
 
 image:
   name: kafdrop
-  tag: latest
+  tag: second
   pullPolicy: IfNotPresent
 
 nameOverride: ""
