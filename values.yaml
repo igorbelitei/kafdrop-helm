@@ -3,12 +3,14 @@
 # Declare variables to be passed into your templates.
 
 global:
+  host: be.aws-us-east-1.gpd.williamhill.plc
+  registry: 208495352775.dkr.ecr.eu-west-2.amazonaws.com
   zookeeper: zookeeper-service:2181
 
 replicaCount: 1
 
 image:
-  repository: thomsch98/kafdrop
+  name: kafdrop
   tag: latest
   pullPolicy: IfNotPresent
 
